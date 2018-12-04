@@ -1,0 +1,73 @@
+<section id="form" class="h40 d-flex align-items-center bg-gradient2 section-padding"></section>
+<section id="process" class="bg-gray section-padding-b" ng-app="app">
+	<div class="container" ng-controller="step6 as vm">
+		<div class="row justify-content-center">
+			<div class="col-sm-8 col-lg-7">
+				<div class="card-wini card-form">
+					<div class="header bg-red text-white">
+						<h1 class="h6">Sin importar tus respuestas, encontraremos un préstamo para ti. Responde honestamente a estas 5 preguntas</h1>
+					</div>
+					<div class="content p-4">
+						<h2 class="font-weight-bold text-center h6">Fecha de nacimiento</h2>
+						<form action="" form name="frm" novalidate>
+							<div class="row justify-content-center">
+								<div class="col col-sm-3">
+									<div class="form-group">
+										<label for="">Día</label>
+										<i class="fas fa-angle-down arrow-select"></i>
+										<select class="form-control btn-rounded" ng-options="item as item for item in days" ng-model="f.dayBirth"></select>
+									</div>
+								</div>
+								<div class="col col-sm-3">
+									<div class="form-group">
+										<label for="">Mes</label>
+										<i class="fas fa-angle-down arrow-select"></i>
+										<select class="form-control btn-rounded" ng-options="item as item for item in months" ng-model="f.monthBirth" ng-change="daysInMonth()"></select>
+									</div>
+								</div>
+								<div class="col col-sm-3">
+									<div class="form-group">
+										<label for="">Año</label>
+										<i class="fas fa-angle-down arrow-select"></i>
+										<select class="form-control btn-rounded" ng-options="item as item for item in years" ng-model="f.yearBirth" ng-change="daysInMonth()"></select>
+									</div>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-12 col-sm-9">
+									<div class="form-group">
+										<label for="">¿Dónde vives?</label>
+										<i class="fas fa-angle-down arrow-select"></i>
+										<select class="form-control btn-rounded" ng-options="item.id as item.description for item in state" ng-model="f.state"></select>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<div class="row justify-content-center">
+								<div class="col-12 col-sm-9">
+									<h4 class="font-weight-bold h6 text-center mb-4">Para finalizar acepta los siguientes términos:</h4>
+									<div class="box-check">
+										<p><input class="cbx" type="checkbox" id="1" ng-model="f.termsConditions" required/><label class="zen" for="1"><span class="ui"></span>Acepto los términos y condiciones del servicio</label></p>
+
+
+										<p><input class="cbx" type="checkbox" id="2" ng-model="f.privacyNotice" required/><label class="zen" for="2"><span class="ui"></span>Acepto el aviso de privacidad</label></p>
+
+
+									</div>
+								</div>
+							</div>
+						</form>
+						<hr>
+						<div class="row justify-content-end">
+							<div class="col-12 col-sm-6">
+								<a class="btn btn-warning btn-rounded font-weight-bold btn-block" ng-disabled="frm.$invalid && frm.$pristine" ng-click="register(frm.$valid); frm.$submitted=true">Quiero la mejor opción <i class="fas fa-angle-double-right ml-2"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="/js/angular.min.js"></script>
+	<script src="/js/app.js"></script>
+</section>

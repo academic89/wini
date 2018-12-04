@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Viewport mobile tag for sensible mobile support -->
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <meta name="description" content="La plataforma que te muestra todos los productos financieros en los que serías aprobado.">
+      <meta name="author" content="Wini.mx">
+      <meta name="google-site-verification" content="IKwmB-lLpYkvAlV-4sYEcUbNHsuE6QF1YiM-pM_MPwI" />
+
+    <title>Wini</title>
+    <!-- Favicone Icon -->
+      <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
+      <link rel="icon" type="image/png" href="/favicon2.png" />
+      <link rel="apple-touch-icon" href="/favicon.png" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/themify-icons.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles/animate.css">
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="/styles/hamburguer.css">
+    <link rel="stylesheet" href="/styles/main.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128557981-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-128557981-1');
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+     fbq('init', '199844050788915');
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+     <img height="1" width="1"
+    src="https://www.facebook.com/tr?id=199844050788915&ev=PageView
+    &noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+
+  </head>
+
+  <body data-spy="scroll" data-target="#navbar-wini">
+    <header>
+			<nav id="navbar-wini" class="navbar fixed-top navbar-expand-lg navbar-light bg-white" >
+				<a class="navbar-brand" href="/" >
+					<img style="width: 140px" src="/images/wini.png" alt="wini">
+				</a>
+				<div class="navbar-toggler hamburger hamburger--elastic js-hamburger" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="hamburger-box">
+				    <span class="navbar-toggler-icon hamburger-inner"></span>
+				  </span>
+				</div>
+				<div class="collapse navbar-collapse" id="navbarText">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link js-scroll-trigger" href="/#home">Inicio <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link js-scroll-trigger" href="/#work">Cómo funciona</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link js-scroll-trigger" href="/#benefits">Beneficios</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/about">Quiénes somos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href="/contact">Contacto</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+    <%- body %>
+
+    <footer class="bg-black py-5">
+      <div class="container text-center">
+        <div class="row pb-40">
+          <div class="col-sm-4 col-md-3">
+            <ul class="list">
+              <li><a href="/loan">Préstamos personales</a></li>
+              <li><a href="/healers">Sanadores de deuda</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4 col-md-3 pb-20">
+            <ul class="list">
+              <li><a href="/terms">Términos y condiciones</a></li>
+              <li><a href="/privacy">Aviso de privacidad</a></li>
+              <li><a href="/faq">Preguntas frecuentes</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4 col-md-3 col-md-offset-1">
+            <ul class="list last">
+              <li><a href="/brand">Quiero anunciar mi marca</a></li>
+              <li><a href="/contact">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-2 mb-4">
+            <p>Síguenos en:</p>
+            <ul class="soc mb-20 dark-bg">
+              <li><a target="_blank" href="https://www.facebook.com/winimexico/"><i class="fab fa-facebook-f"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <p>2018 © wini.mx - Todos los derechos reservados. Al usar este sitio, aceptas nuestra política de privacidad, así como nuestros términos y condiciones.</p>
+      </div>
+    </footer>
+
+    <!--SCRIPTS-->
+    <script src="/dependencies/sails.io.js"></script>
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/angular.min.js"></script>
+    <script src="/js/hamburguer.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script src="/js/app.js"></script>
+    <!--SCRIPTS END-->
+    <!-- <script src="/js/bootstrap.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+      $(function () {
+
+              new WOW().init();
+
+          });
+    </script>
+  </body>
+</html>

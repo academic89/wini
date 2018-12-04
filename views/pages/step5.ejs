@@ -1,0 +1,38 @@
+<section id="form" class="h40 d-flex align-items-center bg-gradient2 section-padding"></section>
+<section id="process" class="bg-gray section-padding-b" ng-app="app">
+	<div class="container" ng-controller="step3 as vm">
+		<div class="row justify-content-center">
+			<div class="col-sm-8 col-lg-7">
+				<div class="card-wini card-form">
+					<div class="header bg-red text-white">
+						<h1 class="h6">Sin importar tus respuestas, encontraremos un préstamo para ti. Responde honestamente a estas 5 preguntas</h1>
+					</div>
+					<div class="content p-4">
+						<h4 class="h6 font-weight-bold text-center">¿Cuál es tu estatus laboral actualmente?</h4>
+						<form action="" form name="frm" novalidate>
+							<div class="radio-tile-group text-center">
+								<div class="input-container" ng-repeat="p in profession">
+									<input class="radio-button" type="radio" name="radio" ng-model="f.profession" value="{{p.id}}" required/>
+									<div class="radio-tile">
+										<label for="walk" class="radio-tile-label">{{p.description}}</label>
+									</div>
+								</div>
+							</div>
+						</form>
+						<hr>
+						<div class="row">
+							<div class="col">
+								<a href="/step2" class="btn btn-light btn-rounded font-weight-bold btn-block"><i class="fas fa-angle-double-left mr-2"></i> Regresar</a>
+							</div>
+							<div class="col">
+								<a class="btn btn-warning btn-rounded font-weight-bold btn-block" ng-disabled="frm.$invalid && frm.$pristine" ng-click="register(frm.$valid && !frm.$pristine); frm.$submitted=true">Siguiente <i class="fas fa-angle-double-right ml-2"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="/js/angular.min.js"></script>
+	<script src="/js/app.js"></script>
+</section>

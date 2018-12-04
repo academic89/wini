@@ -1,0 +1,46 @@
+<section id="form" class="h40 d-flex align-items-center bg-gradient2 section-padding"></section>
+<section id="process" class="bg-gray section-padding-b" ng-app="app">
+	<div class="container" ng-controller="step4 as vm">
+		<div class="row justify-content-center">
+			<div class="col-sm-8 col-lg-7">
+				<div class="card-wini card-form">
+					<div class="header bg-red text-white">
+						<h1 class="h6">Sin importar tus respuestas, encontraremos un préstamo para ti. Responde honestamente a estas 5 preguntas</h1>
+					</div>
+					<div class="content p-4">
+						<h4 class="h6 font-weight-bold text-center">¿Tienes una tarjeta bancaria de débito a tu nombre?</h4>
+						<p class="text-muted">Responde "Sí", en caso de contar con una tarjeta de débito, o "No", en caso de no tener una tarjeta de débito a tu nombre. Después, haz clic en el <span class="badge badge-warning">Siguiente</span></p>
+						<p class="text-info text-center mb-3">Puede ser de nómina, o de cualquier institución bancaria</p>
+						<form action="" form name="frm" novalidate>
+							<div class="radio-tile-group text-center">
+									<div class="input-container">
+										<input class="radio-button" type="radio" name="radio" ng-model="f.debit" value="true" required/>
+										<div class="radio-tile">
+											<label for="walk" class="radio-tile-label bolean">Sí</label>
+										</div>
+									</div>
+									<div class="input-container">
+										<input class="radio-button" type="radio" name="radio" ng-model="f.debit" value="false" required/>
+										<div class="radio-tile">
+											<label for="walk" class="radio-tile-label bolean">No</label>
+										</div>
+									</div>
+							</div>
+						</form>
+						<hr>
+						<div class="row">
+							<div class="col">
+								<a href="/step3" class="btn btn-light btn-rounded font-weight-bold btn-block"><i class="fas fa-angle-double-left mr-2"></i> Regresar</a>
+							</div>
+							<div class="col">
+								<a class="btn btn-warning btn-rounded font-weight-bold btn-block" ng-disabled="frm.$invalid && frm.$pristine" ng-click="register(frm.$valid && !frm.$pristine); frm.$submitted=true">Siguiente <i class="fas fa-angle-double-right ml-2"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="/js/angular.min.js"></script>
+	<script src="/js/app.js"></script>
+</section>
